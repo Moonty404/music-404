@@ -81,22 +81,22 @@ client.on(`message`, async (message) => {
     message.reply(new Discord.MessageEmbed()
                   .setColor("#146DF6")
                  .setDescription(`
-Support Server - [Click Me](https://discord.gg/u4CbGW4qTT)
-Bot Link - [Click Me](https://discord.com/oauth2/authorize?client_id=758785943426564187&permissions=1076132928&scope=bot)
+Support Server - [Click Me](https://discord.gg/SwUTJd7ZYB)
+Bot Link - [Click Me](https://discord.com/api/oauth2/authorize?client_id=794288634659995659&permissions=3439696&scope=bot)
 `)
                   .setTitle(`
 Join a voice channel and \`s!play\` a song.
 Type \`s!help\` for the list of commands.`));
   } 
   //An embed announcement for everyone but no one knows so fine ^w^
-  if(message.content.startsWith(`${prefix}embed`)){
+  if(message.content.startsWith(`${prefix}say`)){
     //define saymsg
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
     .setColor("#146DF6")
     .setDescription(saymsg)
-    .setFooter("Reyna", client.user.displayAvatarURL())
+    .setFooter("Aeon", client.user.displayAvatarURL())
     //delete the Command
     message.delete({timeout: 300})
     //send the Message
@@ -105,13 +105,6 @@ Type \`s!help\` for the list of commands.`));
 
 
 //An join announcement for everyone but no one knows so fine ^w^
-
-client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 500 ){
-    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
-    DarkMan.leave();
-  }
-})
 
 
 //An suuport announcement for everyone but no one knows so fine ^w^
@@ -124,13 +117,13 @@ client.on("guildCreate" , DarkMan => {
     .setDescription (`
     Links
 
-[Support](https://discord.gg/jcs4XwcExv)
+[Support](https://discord.gg/SwUTJd7ZYB)
 -
-[Invite](https://discord.com/oauth2/authorize?client_id=806840212608909344&permissions=70346817&scope=bot)`)
+[Invite](https://discord.com/api/oauth2/authorize?client_id=794288634659995659&permissions=3439696&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setImage(``)
-    .setTitle(`**Support Reyna**`) 
-    .setThumbnail(`https://cdn.discordapp.com/avatars/806840212608909344/bf2d9853ffc2b48775c0cf9f8932a189.png?size=1024`)
+    .setImage(`https://share.creavite.co/ZmwJOw9jdUhtqHsT.gif`)
+    .setTitle(`**Aeon Bot**`) 
+    .setThumbnail(`https://cdn.discordapp.com/attachments/797588358590365713/897617677273681950/fc6e156ce6b0cc362ac40023dc4e5c8e.gif`)
     .setTimestamp()
     
     //send the Message
@@ -138,12 +131,6 @@ client.on("guildCreate" , DarkMan => {
    message.react("<:emoji_4:815583574983966720>")
   } 
    
-client.on("guildCreate" , DarkMan => {
-  if(DarkMan.memberCount < 500){
-    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
-    DarkMan.leave();
-  }
-})
 
 //command Handler DO NOT TOUCH
  const prefixRegex = new RegExp(`^(<@!?${client.user.id}>|${escapeRegex(prefix)})\\s*`);
