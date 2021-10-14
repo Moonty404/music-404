@@ -231,39 +231,5 @@ client.on('message', message => {
 });
  
 
-client.on('message', message => {
-    if (message.content.startsWith("$avatar")) {
-        var mentionned = message.mentions.users.first();
-    var x5bzm;
-      if(mentionned){
-          var x5bzm = mentionned;
-      } else {
-          var x5bzm = message.author;
- 
-      }
-        const embed = new Discord.RichEmbed()
-        .setColor("RANDOM")
-        .setImage(`${x5bzm.avatarURL}`)
-      message.channel.sendEmbed(embed);
-    }
-});
- 
- 
- 
- } if (message.content.startsWith(config.prefix + "avatar")) {
-      if (!message.mentions.users.size) {
-        const avatarAuthor = new Discord.RichEmbed()
-      .setColor(0x333333)
-      .setAuthor(message.author.username)
-      .setImage(message.author.avatarURL)
-        message.channel.send(avatarAuthor);
-        let mention = message.mentions.members.first();
-        const avatarMention = new Discord.RichEmbed()
-        .setColor(0x333333)
-        .setAuthor(mention.user.username)
-        .setImage(mention.user.avatarURL)
-        message.channel.send(avatarMention);
- 
-
 
 //Bot coded by Tomato#6966 
