@@ -69,13 +69,13 @@ async execute(message, args, client) {
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("#146DF6")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-            .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍  [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
+            .setDescription(`<:searching:891421596756094976> \`Searching\` 🔍  [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
         //if not
         }
         else { //send searching TITLE
           message.channel.send(new MessageEmbed().setColor("#146DF6")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-            .setDescription(`<:Youtube:813453040929210379> \`Searching\` 🔍 __**${args.join(" ")}**__`))
+            .setDescription(`<:youtube:891420994135281685> \`Searching\` 🔍 __**${args.join(" ")}**__`))
         }
       } else {
         //If nothing is playing join the channel
@@ -83,19 +83,19 @@ async execute(message, args, client) {
         //send join message
         message.channel.send(new MessageEmbed().setColor("#146DF6")
           .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-          .setDescription(`**<a:yes:813397195771740182> Joined \`${channel.name} \` 🗯️ Name Channel \`#${message.channel.name}\`**`)
+          .setDescription(`**<:store:891421471539355659> Joined \`${channel.name} \` 🗯️ Name Channel \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         //if its an url
         if (urlValid) { //send searching link
           message.channel.send(new MessageEmbed().setColor("#146DF6")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-            .setDescription(`<a:links:813729922643263558> \`Searching\` 🔍 [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
+            .setDescription(`<:links:883032818396057620> \`Searching\` 🔍 [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
           //if not
         }
         else { //send searching TITLE
           message.channel.send(new MessageEmbed().setColor("#146DF6")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-            .setDescription(`<:Youtube:813453040929210379> \`Searching\`  🔍 __**${args.join(" ")}**__`))
+            .setDescription(`<:youtube:891420994135281685> \`Searching\`  🔍 __**${args.join(" ")}**__`))
         }
         //Set selfdeaf and serverdeaf true
         queueConstruct.connection.voice.setSelfDeaf(true);
@@ -164,7 +164,7 @@ async execute(message, args, client) {
       serverQueue.songs.push(song);
       //the new song embed
       const newsong = new MessageEmbed()
-        .setTitle("<:Youtube:813453040929210379>:" + song.title)
+        .setTitle("<:youtube:891420994135281685>:" + song.title)
         .setColor("#FC00FF")
         .setThumbnail(thumb)
         .setURL(song.url)
@@ -202,4 +202,4 @@ async execute(message, args, client) {
 
 //////////////////////////////////////////
 //////////////////////////////////////////
-/////////////by darkman#2021///////////////
+/////////////by Monty#2021///////////////
