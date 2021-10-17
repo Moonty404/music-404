@@ -172,7 +172,7 @@ Type \`s!help\` for the list of commands.`));
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("829675413470969886");
+  let channel = client.channels.cache.get("898279103403270195");
   let embed = new MessageEmbed().setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
   .setTitle( `✅ Join Server`)
@@ -185,7 +185,7 @@ client.on("guildCreate", guild => {
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("829675413470969886");
+  let channel = client.channels.cache.get("898279103403270195");
   let embed = new MessageEmbed()
   .setColor("#146DF6")
   .setAuthor(client.user.username, client.user.avatarURL())
