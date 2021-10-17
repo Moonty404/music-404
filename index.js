@@ -210,7 +210,7 @@ function delay(delayInms) {
 
 client.on("guildCreate" , DarkMan => {
 
-  if(DarkMan.memberCount < 78 ){
+  if(DarkMan.memberCount < 90 ){
 
     console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
 
