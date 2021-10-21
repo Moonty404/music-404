@@ -172,28 +172,28 @@ Type \`s!help\` for the list of commands.`));
 });
 
 client.on("guildCreate", guild => {
-  let channel = client.channels.cache.get("898279103403270195");
-  let embed = new MessageEmbed().setColor("#146DF6")
+  let channel = client.channels.cache.get("900760299987169311");
+  let embed = new MessageEmbed().setColor("#030cad")
   .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `✅ Join Server`)
-  .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${guild.owner}`)
-  .addField("🆔 **Server Id**", `${guild.id}`)
-  .addField("👥 **Member Count**", `${guild.memberCount}`)
+  .setTitle( `<:verified:891421293126242375> Join Server`)
+  .addField("<:store:891421471539355659> Server Name", `${guild.name}`)
+  .addField("<:partner:891421834585714689> Server Owner", `${guild.owner}`)
+  .addField("<:news:891421920984178719> Server Id*", `${guild.id}`)
+  .addField("<:members:891422824294662164> Member Count", `${guild.memberCount}`)
   .setFooter(`${client.user.tag}`);
   channel.send(embed);
 });
 
 client.on("guildDelete", guild => {
-  let channel = client.channels.cache.get("898279103403270195");
+  let channel = client.channels.cache.get("900760299987169311");
   let embed = new MessageEmbed()
-  .setColor("#146DF6")
+  .setColor("#030cad")
   .setAuthor(client.user.username, client.user.avatarURL())
-  .setTitle( `❌ Left Server`)
-  .addField("🔠 **Server Name**", `${guild.name}`)
-  .addField("👑 **Server Owner**", `${guild.owner}`)
-  .addField("🆔 **Server Id**", `${guild.id}`)
-  .addField("👥 **Member Count**", `${guild.memberCount}`)
+  .setTitle( `<:underscore:891421389033177088> Left Server`)
+  .addField("<:store:891421471539355659> Server Name", `${guild.name}`)
+  .addField("<:partner:891421834585714689> Server Owner", `${guild.owner}`)
+  .addField("<:news:891421920984178719> Server Id", `${guild.id}`)
+  .addField("<:members:891422824294662164> Member Count", `${guild.memberCount}`)
   .setFooter(`${client.user.tag}`);
   channel.send(embed);
 });
