@@ -19,7 +19,7 @@ execute(message, args) {
     //if not a guild return
     if(!message.guild) return;
     //react with approve emoji
-    message.react("<:emoji_4:815583574983966720>");
+    message.react("<:voice:891421242777821194>");
     //get the current queue
     const queue = message.client.queue.get(message.guild.id);
     //if no queue return error
@@ -29,7 +29,7 @@ execute(message, args) {
     //define Info Embed
     const volinfoembed = new MessageEmbed()
     .setColor("#146DF6")
-    .setTitle(`<:emoji_5:815583611008843796> Volume is: \`${queue.volume}%\``)
+    .setTitle(`<:voice:891421242777821194> Volume is: \`${queue.volume}%\``)
     //if no args return info embed
     if (!args[0]) return message.channel.send(volinfoembed).catch(console.error);
     //if args is not a number return error
@@ -44,7 +44,7 @@ execute(message, args) {
     //define approve embed
     const volinfosetembed = new MessageEmbed()
     .setColor("#146DF6")
-    .setTitle(`<a:Voulome:827114142610751578> Volume changed to: \`${args[0]}%\`!`)
+    .setTitle(`<:voice:891421242777821194> Volume changed to: \`${args[0]}%\`!`)
     //Send approve message
     return queue.textChannel.send(volinfosetembed).catch(console.error);
   }
