@@ -57,11 +57,11 @@ async execute(message,args,client) {
       // send the temporary embed
       const resultsMessage = await message.channel.send(temEmbed)
       //react with 5 Numbers
-        await resultsMessage.react("769932441967263754");
-        await resultsMessage.react("769932441909067786");
-        await resultsMessage.react("769932441946816542");
-        await resultsMessage.react("769932569235292170");
-        await resultsMessage.react("769933892014440448");
+        await resultsMessage.react("900691107061563442");
+        await resultsMessage.react("900691032046448652");
+        await resultsMessage.react("900690933639680071");
+        await resultsMessage.react("900690842971414558");
+        await resultsMessage.react("900690731121918002");
       //edit the resultmessage to the resultembed
         await resultsMessage.edit(resultsEmbed)
       //set the collector to true
@@ -71,11 +71,11 @@ async execute(message,args,client) {
       await resultsMessage.awaitReactions((reaction, user) => user.id == message.author.id,
       {max: 1, time: 60000, errors: ['time'],} ).then(collected => {
         //if its one of the emoji set them to 1 / 2 / 3 / 4 / 5
-          if(collected.first().emoji.id == "769932441967263754"){ return response = 1; }
-          if(collected.first().emoji.id == "769932441909067786"){ return response = 2; }
-          if(collected.first().emoji.id == "769932441946816542"){ return response = 3; }
-          if(collected.first().emoji.id == "769932569235292170"){ return response = 4; }
-          if(collected.first().emoji.id == "769933892014440448"){ return response = 5; }
+          if(collected.first().emoji.id == "900691107061563442"){ return response = 1; }
+          if(collected.first().emoji.id == "900691032046448652"){ return response = 2; }
+          if(collected.first().emoji.id == "900690933639680071"){ return response = 3; }
+          if(collected.first().emoji.id == "900690842971414558"){ return response = 4; }
+          if(collected.first().emoji.id == "900690731121918002"){ return response = 5; }
           //otherwise set it to error
           else{
             response = "error";
