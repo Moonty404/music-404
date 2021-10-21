@@ -15,8 +15,8 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(`https://cdn.discordapp.com/attachments/797588358590365713/897617677273681950/fc6e156ce6b0cc362ac40023dc4e5c8e.gif`)
-    .setAuthor(`Reyna Bot`, `https://share.creavite.co/nsZHb8txzY6Mhm1Q.gif`)
+    .setThumbnail(`https://media.discordapp.net/attachments/797588358590365713/900623771336081418/image0.jpg`)
+    .setAuthor(`Aeon-Music`, `https://media.discordapp.net/attachments/797588358590365713/900624067651051520/image0.png`)
     .setDescription(`
 
 **User Commands**
