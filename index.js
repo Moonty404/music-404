@@ -81,8 +81,8 @@ client.on(`message`, async (message) => {
     message.reply(new Discord.MessageEmbed()
                   .setColor("RANDOM")
                  .setDescription(`
-Support Server - [Click Me](https://discord.gg/SwUTJd7ZYB)
-Bot Link - [Click Me](https://discord.com/api/oauth2/authorize?client_id=794288634659995659&permissions=3439696&scope=bot)
+Support Server - [here](https://discord.gg/SwUTJd7ZYB)
+Bot Link - [here](https://discord.com/api/oauth2/authorize?client_id=794288634659995659&permissions=3439696&scope=bot)
 `)
                   .setTitle(`
 Join a voice channel and \`!play\` a song.
@@ -96,7 +96,7 @@ Type \`!help\` for the list of commands.`));
     const embed = new Discord.MessageEmbed()
     .setColor("#146DF6")
     .setDescription(saymsg)
-    .setFooter("Aeon", client.user.displayAvatarURL())
+    .setFooter("Meow", client.user.displayAvatarURL())
     //delete the Command
     message.delete({timeout: 300})
     //send the Message
@@ -121,9 +121,9 @@ Type \`!help\` for the list of commands.`));
 -
 [Invite](https://discord.com/api/oauth2/authorize?client_id=794288634659995659&permissions=3439696&scope=bot)`)
     .setFooter(message.author.username, message.author.displayAvatarURL)
-    .setImage(`https://share.creavite.co/ZmwJOw9jdUhtqHsT.gif`)
-    .setTitle(`**Aeon Bot**`) 
-    .setThumbnail(`https://cdn.discordapp.com/attachments/797588358590365713/897617677273681950/fc6e156ce6b0cc362ac40023dc4e5c8e.gif`)
+    .setImage(`https://share.creavite.co/S0SicoUrBkn02AEf.gif`)
+    .setTitle(`**Meow Music**`) 
+    .setThumbnail(`https://media.discordapp.net/attachments/900206300602986506/901050409706209290/A90E7D5C-ACD4-49B9-8FF5-76D043221D91.jpg`)
     .setTimestamp()
     
     //send the Message
@@ -154,7 +154,7 @@ Type \`!help\` for the list of commands.`));
      const timeLeft = (expirationTime - now) / 1000;
      return message.reply(
       new MessageEmbed().setColor("#146DF6")
-      .setTitle(`<:emoji_4:815583574983966720> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the ${prefix}${command.name}\`!`)    
+      .setTitle(`<:aeon:900968552394272788> \`Please wait ${timeLeft.toFixed(1)} seconds before reusing the ${prefix}${command.name}\`!`)    
      );
    }
  }
@@ -165,7 +165,7 @@ Type \`!help\` for the list of commands.`));
  } catch (error) {
    console.error(error);
    message.reply( new MessageEmbed().setColor("#146DF6")
-   .setTitle(`<:emoji_4:815583574983966720> There was an error executing that command.`)).catch(console.error);
+   .setTitle(`<:aeon:900968552394272788> There was an error executing that command.`)).catch(console.error);
  }
 
 
