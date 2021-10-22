@@ -16,7 +16,7 @@ module.exports = {
 
     let helpEmbed = new MessageEmbed()
     .setThumbnail(`https://media.discordapp.net/attachments/797588358590365713/900623771336081418/image0.jpg`)
-    .setAuthor(`Aeon-Music`, `https://media.discordapp.net/attachments/797588358590365713/900624067651051520/image0.png`)
+    .setAuthor(`Meow-Music`, `https://media.discordapp.net/attachments/797588358590365713/900624067651051520/image0.png`)
     .setDescription(`
 
 **User Commands**
@@ -41,7 +41,7 @@ module.exports = {
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("RANDOM");
-   message.react("✅")
+   message.react("<:yesaeon:900950547539054643>")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
