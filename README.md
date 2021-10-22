@@ -1,4 +1,4 @@
-# **~~- `!filter <FILTERNAME>` --    Set Audio - Effects
+- `!filter <FILTERNAME>` --    Set Audio - Effects
 - `!loop`                --    Toggle music loop
 - `!lyrics`              --    Get lyrics for the currently playing song
 - `!nowplaying`          --    Show current song
@@ -19,4 +19,4 @@
 - `!invite`              --    Gives you an invite*
 - `!ping`                --    Gives you the latency of the Bot
 - `!prefix`              --    Sets a server specific Prefix
-- `+!uptime`              --    Gives you the uptime of the Boy~~**
+- `+!uptime`              --    Gives you the uptime of the Boy
