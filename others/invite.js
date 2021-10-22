@@ -15,6 +15,7 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
+    .setThumbnail(`https://media.discordapp.net/attachments/797588358590365713/900623771336081418/image0.jpg`)
     .setDescription(`
 [Click here](https://discord.com/api/oauth2/authorize?client_id=794288634659995659&permissions=3439696&scope=bot) to invite Meow Music.
 `)
