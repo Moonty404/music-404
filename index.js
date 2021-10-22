@@ -79,14 +79,14 @@ client.on(`message`, async (message) => {
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
     message.reply(new Discord.MessageEmbed()
-                  .setColor("#146DF6")
+                  .setColor("RANDOM")
                  .setDescription(`
 Support Server - [Click Me](https://discord.gg/SwUTJd7ZYB)
 Bot Link - [Click Me](https://discord.com/api/oauth2/authorize?client_id=794288634659995659&permissions=3439696&scope=bot)
 `)
                   .setTitle(`
-Join a voice channel and \`s!play\` a song.
-Type \`s!help\` for the list of commands.`));
+Join a voice channel and \`!play\` a song.
+Type \`!help\` for the list of commands.`));
   } 
   //An embed announcement for everyone but no one knows so fine ^w^
   if(message.content.startsWith(`${prefix}say`)){
