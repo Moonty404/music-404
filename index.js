@@ -79,7 +79,7 @@ client.on(`message`, async (message) => {
   //information message when the bot has been tagged
   if(message.content.includes(client.user.id)) {
     message.reply(new Discord.MessageEmbed()
-                  .setColor("RANDOM")
+                  .setColor("#F3692F")
                  .setDescription(`
 Support Server - [here](https://discord.gg/SwUTJd7ZYB)
 Bot Link - [here](https://discord.com/api/oauth2/authorize?client_id=794288634659995659&permissions=3439696&scope=bot)
@@ -94,7 +94,7 @@ Type \`!help\` for the list of commands.`));
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#146DF6")
+    .setColor("#F3692F")
     .setDescription(saymsg)
     .setFooter("Meow", client.user.displayAvatarURL())
     //delete the Command
@@ -113,7 +113,7 @@ Type \`!help\` for the list of commands.`));
     const saymsg = message.content.slice(Number(prefix.length) + 5)
     //define embed
     const embed = new Discord.MessageEmbed()
-    .setColor("#146DF6")
+    .setColor("#F3692F")
     .setDescription (`
     Links
 
@@ -164,7 +164,7 @@ Type \`!help\` for the list of commands.`));
    command.execute(message, args, client);
  } catch (error) {
    console.error(error);
-   message.reply( new MessageEmbed().setColor("#146DF6")
+   message.reply( new MessageEmbed().setColor("#F3692F")
    .setTitle(`<:aeon:900968552394272788> There was an error executing that command.`)).catch(console.error);
  }
 
@@ -208,13 +208,13 @@ function delay(delayInms) {
 
 
 
-client.on("guildCreate" , DarkMan => {
+client.on("guildCreate" , MonTy => {
 
-  if(DarkMan.memberCount < 90 ){
+  if(MonTy.memberCount < 90 ){
 
-    console.log(`  name ( ${DarkMan.name} ) zhmaray memberakan ( ${DarkMan.memberCount}) created by DarkMan`)//by DarkMan
+    console.log(`  name ( ${MonTy.name} ) zhmaray memberakan ( ${MonTy.memberCount}) created by MonTy`)//by MonTy
 
-    DarkMan.leave();
+    MonTy.leave();
 
   }
 
