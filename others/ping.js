@@ -15,6 +15,6 @@ module.exports = {
     //react with approve emoji
     message.react("<:yesaeon:900950547539054643>");
     //send the Ping embed
-    message.reply(new MessageEmbed().setColor("#146DF6").setTitle(":ping_pong: `" + client.ws.ping + "ms`"));
+    message.reply(new MessageEmbed().setColor("#F3692F").setTitle(":ping_pong: `" + client.ws.ping + "ms`"));
   }
 }
