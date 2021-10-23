@@ -33,7 +33,7 @@ React with 🎉 to enter!
 Hosted by: ${message.author}`)
       .setTimestamp()
       .setFooter(`Ends at`)
-      .setColor(`RANDOM`);
+      .setColor(`#F3692F`);
     //delete the Command
     message.delete({timeout: 300})
     let m = await channel.send(Embed);
