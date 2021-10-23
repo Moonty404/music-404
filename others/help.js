@@ -40,7 +40,7 @@ module.exports = {
 `)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
-   .setColor("RANDOM");
+   .setColor("#F3692F");
    message.react("<:yesaeon:900950547539054643>")
     return message.channel.send(helpEmbed).catch(console.error);
 
