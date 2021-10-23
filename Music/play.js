@@ -67,13 +67,13 @@ async execute(message, args, client) {
       if (serverQueue) {
         //if its an url
         if (urlValid) { //send searching link
-          message.channel.send(new MessageEmbed().setColor("#146DF6")
+          message.channel.send(new MessageEmbed().setColor("#F3692F")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
             .setDescription(`<:searching:891421596756094976> \`Searching\` 🔍  [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
         //if not
         }
         else { //send searching TITLE
-          message.channel.send(new MessageEmbed().setColor("#146DF6")
+          message.channel.send(new MessageEmbed().setColor("#F3692F")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
             .setDescription(`<:youtube:891420994135281685> \`Searching\` 🔍 __**${args.join(" ")}**__`))
         }
@@ -81,19 +81,19 @@ async execute(message, args, client) {
         //If nothing is playing join the channel
         queueConstruct.connection = await channel.join();
         //send join message
-        message.channel.send(new MessageEmbed().setColor("#146DF6")
+        message.channel.send(new MessageEmbed().setColor("#F3692F")
           .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
           .setDescription(`**<:store:891421471539355659> Joined \`${channel.name} \` 🗯️ Name Channel \`#${message.channel.name}\`**`)
           .setFooter(`By: ${message.author.username}#${message.author.discriminator}`))
         //if its an url
         if (urlValid) { //send searching link
-          message.channel.send(new MessageEmbed().setColor("#146DF6")
+          message.channel.send(new MessageEmbed().setColor("#F3692F")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
             .setDescription(`<:links:883032818396057620> \`Searching\` 🔍 [𝗟𝗜𝗡𝗞](${args.join(" ")})`))
           //if not
         }
         else { //send searching TITLE
-          message.channel.send(new MessageEmbed().setColor("#146DF6")
+          message.channel.send(new MessageEmbed().setColor("#F3692F")
             .setAuthor(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
             .setDescription(`<:youtube:891420994135281685> \`Searching\`  🔍 __**${args.join(" ")}**__`))
         }
@@ -165,7 +165,7 @@ async execute(message, args, client) {
       //the new song embed
       const newsong = new MessageEmbed()
         .setTitle("<:youtube:891420994135281685>:" + song.title)
-        .setColor("#FC00FF")
+        .setColor("#F3692F")
         .setThumbnail(thumb)
         .setURL(song.url)
         .setDescription(`\`\`\`Has been added to the Queue.\`\`\``)
