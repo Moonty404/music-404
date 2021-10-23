@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js");
 
-const Color = `#FF0000`;
+const Color = `#F3692F`;
 
 
 module.exports = {
@@ -17,7 +17,7 @@ execute(message, args) {
 
     const Embed = new MessageEmbed()
 
-      .setColor("#146DF6")
+      .setColor("#F3692F")
 
       .setTitle(` ${member.username} ` )
 .setURL(URL)
