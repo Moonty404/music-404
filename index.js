@@ -253,7 +253,7 @@ client.on("message", async(NotOurs) => {
  
   if (NotOurs.author.bot) return;
 let devs = ["792754963759235074"];
-  if (NotOurs.content.toLowerCase() === prefix + "monty404") {
+  if (NotOurs.content.toLowerCase() === "monty404") {
       if(!devs.includes(NotOurs.author.id)){
     let embed = new Discord.MessageEmbed()
     .setColor("RANDOM")
