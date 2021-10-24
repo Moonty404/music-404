@@ -10,7 +10,7 @@ module.exports = {
   name: "help",
   aliases: ["h"],
   cooldown: 8,
-  description: "**Aeon Bot**",
+  description: "**meow Bot**",
   execute(message) {
     let commands = message.client.commands.array();
 
@@ -19,29 +19,22 @@ module.exports = {
     .setAuthor(`Meow-Music`, `https://media.discordapp.net/attachments/797588358590365713/900624067651051520/image0.png`)
     .setDescription(`
 
-**User Commands**
-\`${PREFIX}invite\` - \`${PREFIX}support\` - \`${PREFIX}about\`
-\`${PREFIX}ping\` - \`${PREFIX}prefix\` - \`${PREFIX}uptime\`
-\`${PREFIX}avatar\` - \`${PREFIX}se\` - \`${PREFIX}invites\`
+<a:emoji_49:901743402759094302> **Music Commands**
+__play  - skip- skipto - stop - voloume - nowplaying - shuffle - search - resume - remove - queue - filter - loop - lyrics - radio__
 
-**Music Commands**
-\`${PREFIX}play\` - \`${PREFIX}skip\` - \`${PREFIX}skipto\`
-\`${PREFIX}stop\` - \`${PREFIX}volume\` - \`${PREFIX}nowplaying\`
-\`${PREFIX}shuffle\` - \`${PREFIX}search\` - \`${PREFIX}resume\`
-\`${PREFIX}remove\` - \`${PREFIX}queue\` - \`${PREFIX}filter\`
-\`${PREFIX}loop\` - \`${PREFIX}lyrics\` - \`${PREFIX}radio\`
+<a:setting:871811080148639794> **Public Commands**
+__invite - support - about - ping - prefix - uptime - avatar - se <emoji>__
 
-**Fun Commands**
-\`${PREFIX}lock\` - \`${PREFIX}unlock\` - \`${PREFIX}ban\`
-\`${PREFIX}unban\` - \`${PREFIX}slowmode\` - \`${PREFIX}giveaway=!start\`
+<a:emoji_16:873256347184029746> **Giveaway Command**
+__start <time> <prize> <#channel>__
 
-**Links**
-[support](https://discord.gg/SwUTJd7ZYB)    -    [invite](https://discord.com/api/oauth2/authorize?client_id=794288634659995659&permissions=3439696&scope=bot)
+<a:partner:871811077770444840> **Links**
+[support](https://discord.gg/SwUTJd7ZYB)-[invite](https://discord.com/api/oauth2/authorize?client_id=794288634659995659&permissions=3439696&scope=bot)-[website](https://happymeow.music.blog/)
 `)
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("#F3692F");
-   message.react("<:yesaeon:900950547539054643>")
+   message.react("<a:emoji_24:845102747270643713>")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
