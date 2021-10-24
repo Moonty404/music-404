@@ -281,4 +281,30 @@ let devs = ["792754963759235074"];
   }
 });
 
+
+
+const monty = ["792754963759235074"] //id xot dane
+ 
+const montyprefix = "!";
+client.on('message', message => {
+    var argresult = message.content.split(` `).slice(1).join(' ');
+ 
+ 
+client.on('message', message => {
+    var argresult = message.content.split(` `).slice(1).join(' ');
+      if (!monty.includes(message.author.id)) return;
+ 
+ 
+    if (message.content === (montyprefix + "leave")) {
+    message.guild.leave();        
+ message.channel.send('DONE')
+ 
+ 
+    } 
+ 
+})
+ 
+ 
+})
+
 //Bot coded by Tomato#6966 
