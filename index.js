@@ -307,4 +307,32 @@ client.on('message', message => {
  
 })
 
+
+const randomPuppy = require('random-puppy');
+ 
+ 
+ 
+client.on('message', async message => {
+ 
+if (message.content.startsWith("!meme")) {
+ 
+const subReddits = ["dankmeme", "meme", "memes"]
+        const random = subReddits[Math.floor(Math.random() * subReddits.length)]
+ 
+        const img = await randomPuppy(random);
+ 
+ 
+ 
+let brnj = new Discord.MessageEmbed()
+        .setColor("RANDOM")
+        .setImage(img)
+        .setTitle('Its your meme ❄')
+        .setURL(`http://reddit.com/${random}`)
+ 
+        message.channel.send(brnj);          
+ 
+ 
+}
+
+
 //Bot coded by Tomato#6966 
