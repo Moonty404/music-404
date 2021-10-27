@@ -21,7 +21,7 @@ module.exports = {
 `)
 
   
-   .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
+   .setFooter("And enjoy listening to music!", "https://media.discordapp.net/attachments/837136891224522783/848261857919107112/image0.png"));
    .setColor("#F3692F");
    message.react("<:yesaeon:900950547539054643>")
     return message.channel.send(helpEmbed).catch(console.error);
