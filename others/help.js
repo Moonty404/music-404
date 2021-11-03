@@ -15,8 +15,8 @@ module.exports = {
     let commands = message.client.commands.array();
 
     let helpEmbed = new MessageEmbed()
-    .setThumbnail(`https://media.discordapp.net/attachments/797588358590365713/900623771336081418/image0.jpg`)
-    .setAuthor(`Meow-Music`, `https://media.discordapp.net/attachments/797588358590365713/900624067651051520/image0.png`)
+    .setThumbnail(`https://media.discordapp.net/attachments/902880684505456680/905246272938737704/image0.gif`)
+    .setAuthor(`Meow-Music`, `https://images-ext-2.discordapp.net/external/wddx7UZ9Abt46a0ewygiTK6MDI2uQWF8nbvTxUXJBRg/https/cdn.discordapp.com/emojis/642159082207313922.png`)
     .setDescription(`
 
 🎶 **Music Commands**
@@ -34,7 +34,7 @@ __start <time> <prize> <#channel>__
 
    .setFooter(`${message.author.username}#${message.author.discriminator}`, message.member.user.displayAvatarURL({ dynamic: true }))
    .setColor("#F3692F");
-   message.react("🔘")
+   message.react("✅")
     return message.channel.send(helpEmbed).catch(console.error);
 
   }
